@@ -7,6 +7,8 @@ body {
   float:inherit;
   max-width:100%;
   opacity: 0.7;
+  filter: grayscale(40%);
+
 }
 header{
   display:flex;
@@ -17,6 +19,10 @@ h1 {
   align: center;
   color:#423f40;
   font-weight: bold;
+}
+
+h1:hover {
+  cursor: pointer;
 }
 
 .small{
@@ -58,18 +64,49 @@ h1 {
   .big {
     display: none;
   }
+  .display {
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    margin-right:70%;
+    margin-top:25%;
+    position: fixed;
+    z-index:1;
+  }
   .small {
     display: block;
     text-align:left;
     font-size:50px;
     cursor:pointer;
   }
+  .menu {
+    background-color: #c4bec0;
+    border: solid;
+    font-size:20px;
+    padding-top:5%;
+  }
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .text{
   display: flex;
+  margin-left:30%;
+  margin-top:10%;
+  margin-right:5%;
+  text-align:justify;
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  font-size:50px;
+  padding:30px;
+  margin-left: 20%;
+}
+footer{
+  text-align: center;
+  font-size:15px;
 }
