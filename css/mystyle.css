@@ -1,6 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color:#c4bec0;
+  background-color:#b8bab8;
   letter-spacing:2px;
 }
 .warsaw{
@@ -78,12 +78,24 @@ h1:hover {
     text-align:left;
     font-size:50px;
     cursor:pointer;
+    color: #244242;
   }
   .menu {
-    background-color: #c4bec0;
+    background-color: #e5e8e7;
     border: solid;
     font-size:20px;
     padding-top:5%;
+  }
+
+  .text{
+    display: flex;
+    margin-left:30%;
+    margin-top:10%;
+    margin-right:5%;
+    text-align:justify;
+  }
+  .obrazek {
+    display:none;
   }
 }
 
@@ -91,12 +103,18 @@ h1:hover {
   display: none;
 }
 
-.text{
-  display: flex;
-  margin-left:30%;
+@media screen and (min-width:993px){
+.text {
+  display: grid;
+  grid-template-columns: 25% 65%;
+  grid-gap:3%;
   margin-top:10%;
   margin-right:5%;
   text-align:justify;
+  }
+}
+.obrazek{
+  width:100%;
 }
 
 .icons{
@@ -105,8 +123,12 @@ h1:hover {
   font-size:50px;
   padding:30px;
   margin-left: 20%;
+  color: #244242
 }
 footer{
   text-align: center;
   font-size:15px;
+}
+span {
+  color: #244242;
 }
